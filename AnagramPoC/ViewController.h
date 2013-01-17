@@ -8,6 +8,17 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <UITextFieldDelegate> {
+    
+    IBOutlet    UILabel     *anagramLabel;
+    IBOutlet    UILabel     *wordLabel;
+    IBOutlet    UIButton    *shuffleButton;
+    
+    NSString    *theWord;
+    NSString    *theAnagram;
+    
+}
+
+-(IBAction)anagramIt;
 
 @end
